@@ -22,7 +22,6 @@ def list_articles():
 def add_article():
     data = request.json
     article = data.get('article')
-    # Ajouter l'article à une base de données
     return {'message': f"Article '{article}' ajouté avec succès! ✅"}, 201
 
 @app.route('/page')
